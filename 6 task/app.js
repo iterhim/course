@@ -5,6 +5,6 @@ let filterBy = function (array, type){
             arr.push(array[i])
         }
     }
-    console.log(arr)
+    return(arr)
 }
 filterBy(['hello', 'world', 23, '23', null], "string")
