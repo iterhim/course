@@ -8,7 +8,7 @@ let createNewUser = function () {
         lastName: prompt(),
         getLogin: function () {
             let get = this.firstName[0] + this.lastName;
-            console.log(get.toLowerCase());
+            return(get.toLowerCase());
         }
     }
     newUser.getLogin()
