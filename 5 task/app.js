@@ -25,7 +25,7 @@ let createNewUser = function () {
         },
         getPassword: function (){
             let getPassword = this.firstName[0].toUpperCase() + this.lastName + this.birthday[0] + this.birthday[1] + this.birthday[2] + this.birthday[3];
-            console.log(getPassword)
+            return(getPassword)
         }
     }
     newUser.getLogin();
