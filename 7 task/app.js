@@ -1,30 +1,23 @@
-let filterBy = function (array) {
+let filterBy = function (arr) {
 
-    window.onload = function () {
-        for (let i = 0; i < array.length; i++) {
-            let mySpan = document.createElement("span");
-            mySpan.style.color = "brown";
-            mySpan.style.display = "flex";
-            // mySpan.innerHTML = array[i];
-            // alert(typeof array[i])
-            if (typeof array[i] === "object") {
-                mySpan.innerHTML = "[" + array[i] + "]";
-            }else {
-
-                mySpan.innerHTML = array[i];
-            }
-            document.body.appendChild(mySpan);
-        }
-        const doubles = array.map((str) => str + " \t");
-
-        let mySpan2 = document.createElement("span");
-        mySpan2.style.color = "brown";
-        mySpan2.style.display = "flex";
-        
-        mySpan2.innerHTML = doubles;
-        document.body.appendChild(mySpan2);
+    const firstList = function (array) {
+        let result = "<ul>";
+        array.map((str) =>
+            result += `<li>${str}</li>`
+        );
+        result += "</ul>";
+        return result;
     }
+
+    const listHTML = document.getElementById("asd");
+    arr.map(element => {
+        if(typeof element === "object"){
+            listHTML.innerHTML += firstList(arr);
+        }else{
+            listHTML.innerHTML += `<li>${element}</li>`;
+        }
+
+    });
 }
 
-filterBy(['hello', 'world', 'Kiev', 'Kharkiv', ['hello', 'world', 'Kiev', 'Kharkiv', 'Odessa', 'Lviv'], 'Lviv'])
-
+filterBy(['hello', 'world', ['hello', 'world', 'Kiev', 'Kharkiv', 'Odessa', 'Lviv'], 'Kiev', 'Kharkiv', ['hello', 'world', 'Kiev', 'Kharkiv', 'Odessa', 'Lviv'], 'Lviv'])
