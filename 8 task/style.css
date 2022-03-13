@@ -1,0 +1,50 @@
+*{
+    background-color: #444949;
+}
+input{
+    display: block;
+    height: 9px;
+    width: auto;
+    margin: 13px;
+}
+.out{
+    color: #9ee335;
+    background-color: #444949;
+    width: 100%;
+}
+
+input:hover{
+    border-color: #9ee335;
+    transition: 1s;
+}
+.lists{
+    width: 10%;
+    height: 1099px;
+    background-color: #9ee335;
+    visibility: hidden;
+}
+.myClass{
+    box-shadow:  0.2em 0 .9em #de2929;
+    border-color: #d00000;
+    color: #d00000;
+    /*#ababa2*/
+}
+span{
+
+    color: #9ee335;
+    position: relative;
+    top: -30px;
+}
+.selected{
+    visibility: visible;
+}
+button{
+    border: none;
+    margin: 0;
+}
+.last{
+    width: 100%;
+    position: static;
+    margin-top: 50px;
+}
+
