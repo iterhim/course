@@ -1,0 +1,12 @@
+.slideSingle {
+    width: 400px;
+    height: 400px;
+    margin: auto;
+
+}
+
+.images-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
