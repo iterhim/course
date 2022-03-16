@@ -25,12 +25,11 @@ ul {
     color: #937341;
     cursor: pointer;
 }
-
-.tabs-title.active {
+.active {
     background-color:#937341 ;
     color: #23201D;
 }
 .active{
-    background-color: #23201D;
+    /*background-color: #23201D;*/
 
 }
