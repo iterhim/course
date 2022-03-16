@@ -5,7 +5,6 @@ let arbtn = document.getElementsByClassName('btn');
 
 document.addEventListener('keypress', (event) => {
     let keyName = event.key;
-    console.log(keyName)
     let del = function () {
         arbtn[0].classList.remove("asr")
         arbtn[1].classList.remove("asr")
