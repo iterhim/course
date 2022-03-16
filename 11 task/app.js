@@ -19,7 +19,7 @@ document.addEventListener('keypress', (event) => {
 
         if (keyName === arbtn[i].value) {
             switch (i) {
-                case (0):
+                case 0:
                     del();
                     arbtn[0].classList.add("asr");
                     break;
