@@ -11,6 +11,7 @@ input{
     color: #9ee335;
     background-color: #444949;
     width: 100%;
+    /*height: 100%;*/
 }
 
 input:hover{
@@ -33,6 +34,7 @@ span{
 
     color: #9ee335;
     position: relative;
+    height: 200px;
     top: -30px;
 }
 .selected{
@@ -44,7 +46,11 @@ button{
 }
 .last{
     width: 100%;
+    height: 300px;
     position: static;
     margin-top: 50px;
+}
+input{
+    /*height: 20px;*/
 }
 

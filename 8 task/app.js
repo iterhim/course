@@ -9,7 +9,7 @@ let func = function (){
             second.value = "";
         }else{
             document.querySelector('#asd').classList.remove('myClass');
-            first.innerHTML = `<div class="out">Текущая цена: ${second.value} <button id="butt">||X||</button></div> `;
+            first.innerHTML = `<div class="out">Текущая цена: ${second.value} <button id="butt">||X||</button><br></div> `;
             second.value = "";
         }
     }
