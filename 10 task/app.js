@@ -1,33 +1,23 @@
 let app = function () {
-    let firstButton = document.getElementById('firstButton');
-    let secondButton = document.getElementById('secondButton');
-    let firstInput = document.getElementById('firstInput');
-    let secondInput = document.getElementById('secondInput');
-    let value = 0,val2 = 0;
-    firstButton.onclick = function () {
-        value += 1;
-        if (value % 2 !== 0) {
-            firstInput.type = "";
-            firstButton.innerHTML = "Скрити пароль"
-        }else {
-            firstInput.type = "password";
-            firstButton.innerHTML = "Показати пароль"
+    let btn = document.querySelectorAll('button');
+    let inp = document.querySelectorAll('input');
+
+    let value = 0;
+    for (let i = 0; i < inp.length; i++) {
+        btn[i].onclick = function () {
+            value += 1;
+            if (value % 2 !== 0) {
+                inp[i].type = "";
+                btn[i].innerHTML = "Скрити пароль"
+            }else {
+                inp[i].type = "password";
+                btn[i].innerHTML = "Показати пароль"
+            }
         }
     }
-    secondButton.onclick = function () {
-        val2 += 1;
-        if (val2 % 2 !== 0) {
-            secondInput.type = "";
-            secondButton.innerHTML = "Скрити пароль"
-        }else {
-            secondInput.type = "password";
-            secondButton.innerHTML = "Показати пароль"
-        }
-    }
-    let lastButton = document.getElementById('lastBtn');
     let div = document.getElementById('lastdiv');
-    lastButton.onclick = function (){
-        if(firstInput.value === secondInput.value){
+    btn[2].onclick = function (){
+        if(inp[0].value === inp[1].value){
             alert('You are welcome')
         }else {
             div.innerHTML = "<div class='lastDiv'>Нужно ввести одинаковые значения</div>";
