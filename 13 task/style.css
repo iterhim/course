@@ -1,0 +1,19 @@
+*{
+    text-align: center;
+}
+.green{
+    background-color: #500303;
+    color: #9ee335;
+    border-color: #23201D;
+}
+button{
+    width: 250px;
+    padding: 0;
+}
+.btn:hover{
+    box-shadow: #1e1105 10px 10px 10px;
+    background-color: #c93535;
+    border-radius: 10px;
+    border: none;
+
+}
