@@ -33,3 +33,29 @@ if (al === "true") {
     btn[0].classList.remove(`btn`);
     body[0].classList.remove(`green`);
 }
+
+//code vitaliykyq
+//
+//
+//
+//
+// let btn = document.querySelector("button");
+// let body = document.querySelector("body");
+//
+// let ev = !!localStorage.getItem("myKey");
+// btn.addEventListener("click", function () {
+//     localStorage.setItem("point", (++ev).toString());
+//     localStorage.setItem("myKey", (ev % 2 !== 0).toString());
+//     window.location.reload();
+// })
+//
+//
+// let al = !!localStorage.getItem('myKey');
+//
+// if  (al){
+//     btn.classList.add("btn");
+//     body.classList.add(`green`);
+// } else {
+//     btn.classList.remove(`btn`);
+//     body.classList.remove(`green`);
+// }
