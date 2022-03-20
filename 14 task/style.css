@@ -1,0 +1,61 @@
+button{
+    width: 100px;
+    /*height: 100px;*/
+    background-color: #9ee335;
+}
+.red{
+    background-color: #4f1313;
+    color: #d00000;
+    height: 100px;
+    width: 100%;
+    display: block;
+    border: none;
+}
+.green {
+    background-color: #500303;
+    color: #9ee335;
+}
+ul a{
+    height: 100px;
+    display: block;
+    text-decoration: none;
+}
+ul a:nth-child(2n){
+    color: #9ee335;
+    font-family: Chandas;
+
+}
+ul a:nth-child(3n){
+    color: #ef0101;
+    font-family: aakar;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+
+}
+.navbar a {
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+    background-color: #9ee335;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+#up{
+    position: fixed;
+    right: 100px;
+    bottom: 100px;
+    width: 50px;
+    height: 50px;
+    background-color: #d00000;
+}
+#up:hover{
+    background-color: #9ee335;
+    transition: 3s;
+}
+
+
