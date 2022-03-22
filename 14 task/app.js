@@ -9,10 +9,6 @@ $(document).ready(function(){
     $(document).on("scroll", window, function (){
         if ($(window).scrollTop()>=750){
             butt.show();
-            butt.on("click", function (){
-
-            });
-
         }else {
             $("#up").hide();
         }
