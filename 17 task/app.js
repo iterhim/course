@@ -10,19 +10,20 @@ let student = {
 student.name = prompt("your name: ");
 student.lastName = prompt("your surname: ");
 
-let arr = [], summ = 0;
+let lesson = "", mark = "", arr = [], summ = 0, index = 0;
 
-for (let i = 0; i < 100; i++) {
+while(true) {
     let lesson = prompt("Введите урок: ");
-    let mark = Number(prompt("Введите оценку: "));
+    let mark = +prompt("Введите оценку: ");
 
-    if (lesson === null || mark === null) break;
+    if (lesson === null || mark == null) break;
     else {
-        student.table.lessonName[i] = lesson;
-        student.table.mark[i] = mark;
+        student.table.lessonName[index] = lesson;
+        student.table.mark[index] =  mark;
     }
-    if (student.table.mark[i] < 4) arr.push(i);
-    summ += +student.table.mark[i];
+    if (student.table.mark[index] < 4) arr.push(index);
+    summ += +student.table.mark[index];
+    index++;
 }
 
 let ser = summ / student.table.mark.length;
